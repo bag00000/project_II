@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="image/ico/favicon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css'>
+</head>
+
+<body>
+    <div id="app">
+        <div class="container"  >
+
+            <h1><center>&nbsp;<font color="gray"><b>Welcome to BB'Bike69 Shop</b></font><br></center></h1></legend>
+
+            <form id="form" class="form-signin" action="" method="POST" role="form" style="background: #C0F9BD">
+                <div class="imgcontainer">
+                    <img src="image/login.png" alt="loin" class="loin">
+                </div>
+
+                <div class="form-group">
+                    <label for="username"><b>Username</b></label>
+                    <input type="text" id="username" name="username" placeholder="username@hotmail.com" maxlength="12">
+
+                    <label for="password"><b>Password</b></label>
+                    <input type="password" id="password" name="password" placeholder="012345678910" maxlength="12"><br>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" name="remember"> Remember Me</label>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="signin" name="button" onclick="create()" class="btn btn-lg btn-success">Login</button>
+                </div>
+                <div class="form-group">
+                    <a href="signup.html" role="button" class="btn btn-lg btn-warning ">Sign Up</a> <a href="index.html" role="button" class="btn btn-lg btn-danger">Back to Index</a>
+                </div>
+
+            </form>
+            <div id="err" style="display:none" class="alert alert-danger alert-dismissable fade in">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">x</a>
+                <strong>Incorrect username or password</strong><br>
+                <span style="color:blue;font-weight:bold" id="summary"></span>
+            </div>
+            <div id="suc" style="display:none" class="alert alert-success alert-dismissable fade in">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">x</a>
+                <strong>Login Successful!!!</strong>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/cache.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/singins.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript">
+        function create() {
+            $.cookie('keep', 'user data');
+            console.log($.cookie('keep'));
+        }
+    </script>
+</body>
+
+</html>
+</body>
+
+</html>
